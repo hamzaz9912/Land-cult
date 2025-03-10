@@ -103,8 +103,8 @@ export default function LandBanner() {
               priority
             />
           </div>
-          <div className="absolute top-1/4 right-4 sm:right-10 md:right-20 z-20 text-left max-w-[80%] sm:max-w-[60%]">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2 tracking-wide text-right">
+          <div className="absolute top-1/4 right-10 sm:right-10 md:right-20 z-20 text-left max-w-[80%] sm:max-w-[60%]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2 tracking-wide text-left">
               <span className="block text-gray-300 drop-shadow-lg">
                 BUY LAND
               </span>
@@ -112,11 +112,11 @@ export default function LandBanner() {
                 IN WASTELANDS
               </span>
             </h2>
-            <p className="max-w-md ml-auto text-xs sm:text-sm mb-3 sm:mb-4 md:mb-6 text-gray-300 text-right">
+            <p className="max-w-md ml-auto text-xs sm:text-sm mb-3 sm:mb-4 md:mb-6 text-gray-300 text-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <div className="text-right">
+            <div className="text-left">
               <button className="bg-white hover:bg-gray-200 text-black font-medium text-xs sm:text-sm py-1.5 sm:py-2 px-4 sm:px-6 rounded-full transition duration-300">
                 BUY LAND
               </button>
@@ -151,7 +151,7 @@ export default function LandBanner() {
               {/* LoC Title - responsive font size */}
               <div className="mt-6 sm:mt-10 md:mt-16 text-center">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white font-serif tracking-widest">
-                  LoC
+                  LOC
                 </h2>
               </div>
 

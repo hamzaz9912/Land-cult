@@ -1,4 +1,3 @@
-// pages/index.js
 import Head from "next/head";
 import Image from "next/image";
 import twitter_icon from "../assets/icon/twitter.png";
@@ -24,19 +23,34 @@ export default function LandBanner() {
               href="#"
               className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 border border-white rounded-[35px] hover:bg-white hover:text-black transition text-xs sm:text-sm"
             >
-              <img src={twitter_icon.src} className="w-4 h-4 sm:w-5 sm:h-5" alt="Twitter" /> TWITTER
+              <img
+                src={twitter_icon.src}
+                className="w-4 h-4 sm:w-5 sm:h-5"
+                alt="Twitter"
+              />{" "}
+              TWITTER
             </a>
             <a
               href="#"
               className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 border border-white rounded-[35px] hover:bg-white hover:text-black transition text-xs sm:text-sm"
             >
-              <img src={twitter2_icom.src} className="w-4 h-4 sm:w-5 sm:h-5" alt="Twitter 2" /> TWITTER
+              <img
+                src={twitter2_icom.src}
+                className="w-4 h-4 sm:w-5 sm:h-5"
+                alt="Twitter 2"
+              />{" "}
+              TWITTER
             </a>
             <a
               href="#"
               className="flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 border border-white rounded-[35px] hover:bg-white hover:text-black transition text-xs sm:text-sm"
             >
-              <img src={telegram_icon.src} className="w-4 h-4 sm:w-5 sm:h-5" alt="Telegram" /> TELEGRAM
+              <img
+                src={telegram_icon.src}
+                className="w-4 h-4 sm:w-5 sm:h-5"
+                alt="Telegram"
+              />{" "}
+              TELEGRAM
             </a>
           </div>
         </div>
@@ -123,7 +137,7 @@ export default function LandBanner() {
             {/* Background image */}
             <div className="absolute inset-0">
               <Image
-                src="/landofculet_N2-2.jpg"
+                src="/bgbanner.jpg"
                 alt="Cult wasteland with character"
                 fill
                 sizes="100vw"
@@ -209,11 +223,13 @@ export default function LandBanner() {
                   NFT LAND OF CULT
                 </h2>
                 <p className="mt-2 sm:mt-4 md:mt-6 max-w-4xl mx-auto text-center text-gray-300 text-xs sm:text-sm md:text-base px-4">
-                  Lorem ipsum dolor sit amet, adipiscing elit, 
-                  <br className="hidden sm:block" /> 
-                  sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
-                  <br className="hidden sm:block" /> 
-                  Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, adipiscing elit,
+                  <br className="hidden sm:block" />
+                  sed do eiusmod tempor ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam, quis.
+                  <br className="hidden sm:block" />
+                  Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod
+                  tempor ut labore et dolore magna aliqua.
                 </p>
               </div>
             </div>

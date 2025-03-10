@@ -1,11 +1,10 @@
-// pages/index.js
-import Head from 'next/head';
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import Head from "next/head";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Wasteland() {
   const [glowIntensity, setGlowIntensity] = useState(1);
-  
+
   // Animation for the glowing token
   useEffect(() => {
     const glowAnimation = setInterval(() => {
@@ -16,7 +15,7 @@ export default function Wasteland() {
         return prev > 1 ? prev - 0.01 : prev + 0.01;
       });
     }, 50);
-    
+
     return () => clearInterval(glowAnimation);
   }, []);
 
@@ -24,7 +23,10 @@ export default function Wasteland() {
     <div className="min-h-screen bg-black text-white overflow-hidden">
       <Head>
         <title>Wasteland Token</title>
-        <meta name="description" content="Wasteland Token - Post-apocalyptic digital collectible" />
+        <meta
+          name="description"
+          content="Wasteland Token - Post-apocalyptic digital collectible"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -52,21 +54,24 @@ export default function Wasteland() {
             </h1>
             <p className="mt-3 sm:mt-4 max-w-xs sm:max-w-sm md:max-w-lg mx-auto text-gray-300 text-xs sm:text-sm leading-relaxed opacity-80 px-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              <span className="hidden sm:inline"><br /></span> 
+              <span className="hidden sm:inline">
+                <br />
+              </span>
               Morbi eu felis eget nisi ultrices aliquam.
-              <span className="hidden sm:inline"><br /></span>
-              Ut sodales massa vitae libero varius, 
-              <span className="hidden sm:inline"><br /></span> 
+              <span className="hidden sm:inline">
+                <br />
+              </span>
+              Ut sodales massa vitae libero varius,
+              <span className="hidden sm:inline">
+                <br />
+              </span>
               in maximus nibh ultrices.
             </p>
           </div>
 
           {/* Token Display */}
           <div className="mt-4 sm:mt-8 mb-8 sm:mb-16 relative">
-            <div 
-              className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 relative"
-              
-            >
+            <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 relative">
               <Image
                 src="/wasteland-token.png"
                 alt="Wasteland Token"
@@ -75,16 +80,16 @@ export default function Wasteland() {
                 className="relative z-20"
               />
             </div>
-            
+
             {/* Glow effect overlay */}
-            <div 
+            <div
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full bg-orange-500"
-              style={{ 
-                width: '40%', 
-                height: '40%', 
-                filter: 'blur(20px)',
+              style={{
+                width: "40%",
+                height: "40%",
+                filter: "blur(20px)",
                 opacity: 0.3 * glowIntensity,
-                zIndex: 10
+                zIndex: 10,
               }}
             ></div>
           </div>
@@ -102,12 +107,10 @@ export default function Wasteland() {
 
         {/* Subtle overlay for more post-apocalyptic feeling */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-30 pointer-events-none"></div>
-        
+
         {/* Dust particles effect */}
         <div className="dust-particles"></div>
       </main>
-
-      
     </div>
   );
 }
